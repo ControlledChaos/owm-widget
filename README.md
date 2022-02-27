@@ -1,6 +1,6 @@
 # OWM Wwidget
 
-Frontend widget addon for the OWM Weather plugin
+Frontend weather widget addon for the OWM Weather plugin.
 
 ## Requirements
 
