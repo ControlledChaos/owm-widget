@@ -51,14 +51,20 @@ class Weather_Shortcode_Widget extends \WP_Widget {
 
 		?>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'owm-widget' ); ?></label>
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>">
+				<?php _e( 'Title:', 'owm-widget' ); ?>
+			</label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
-			<br /><span class="description"><?php _e( 'Title text will display above the weather content.', 'owm-widget' ); ?></span>
+			<br />
+			<span class="description"><?php _e( 'Title text will display above the weather content.', 'owm-widget' ); ?></span>
 		</p>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'shortcode' ); ?>"><?php _e( 'Shortcode:', 'owm-widget' ); ?></label>
+			<label for="<?php echo $this->get_field_id( 'shortcode' ); ?>">
+				<?php _e( 'Shortcode:', 'owm-widget' ); ?>
+			</label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'shortcode' ); ?>" type="text" value="<?php echo esc_attr( $shortcode ); ?>" />
-			<br /><span class="description"><?php _e( 'Paste in the shortcode of the weather you would like to display.', 'owm-widget' ); ?></span>
+			<br />
+			<span class="description"><?php _e( 'Paste in the shortcode of the weather you would like to display.', 'owm-widget' ); ?></span>
 		</p>
 		<?php
 	}
@@ -106,11 +112,9 @@ class Weather_Shortcode_Widget extends \WP_Widget {
 		if ( ! empty( $title ) ) {
 			echo $args['before_title'] . $title . $args['after_title'];
 		}
-
 		if ( $shortcode ) {
 			echo do_shortcode( $shortcode );
 		}
-
 		echo $args['after_widget'];
 	}
 }
