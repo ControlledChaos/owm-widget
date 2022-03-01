@@ -66,7 +66,7 @@ foreach ( glob( OWMW_PATH . '/includes/classes/*.php' ) as $filename ) {
 /**
  * OWM Weather required
  *
- * Add admin notice and stop here if the OWM Weather plugin is active.
+ * Add admin notice and stop here if the OWM Weather plugin is not active.
  */
 if ( ! is_plugin_active( 'owm-weather/owmweather.php' ) ) {
 	Activate\row_notice();
