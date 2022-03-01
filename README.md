@@ -1,4 +1,4 @@
-# OWM Wwidget
+# OWM Widget
 
 Frontend weather widget addon for the OWM Weather plugin.
 
