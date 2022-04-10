@@ -1,5 +1,7 @@
 # OWM Widget
 
+⚠️ This plugin is no longer necessary. The widget has been merged into the OWM Weather plugin.
+
 Frontend weather widget addon for the OWM Weather plugin.
 
 ## Requirements
